@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: blueviolet;
+}
+
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.wrapper .loader {
+    display: flex;
+}
+.loader .item {
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    background-color: green;
+    margin: 0 10px;
+    animation: load 1s ease-in infinite;
+}
+
+.loader .item.one {
+    animation-delay: 0.1s;
+}
+
+.loader .item.two {
+    animation-delay: o.3s;
+}
+
+.loader .item.three {
+    animation-delay: o.6s;
+}
+
+
+
+@keyframes load {
+    0%{
+        width: 30px;
+        height: 30px;
+    }
+    50%{
+        width:20px;
+        height:20px;
+    }
+}

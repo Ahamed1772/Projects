@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: antiquewhite;
+}
+
+.card{
+    width: 700px;
+    height: 120px;
+    background-color: whitesmoke;
+    margin: 20px 5px;
+    line-height: 28px;
+    font-family: serif;
+}
+
+.card .card-title {
+    text-align: center;
+    transition: 0.5s;
+}
+
+
+.card .card-title:hover{
+    color: transparent;
+    -webkit-text-stroke: 2px green;
+}
+
+::-webkit-scrollbar {
+    background-color: transparent;
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+    border-radius: 100px;
+}
